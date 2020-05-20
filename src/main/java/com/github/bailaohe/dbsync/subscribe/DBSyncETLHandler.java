@@ -21,7 +21,7 @@ public abstract class DBSyncETLHandler<S, I, T> extends DBSyncHandler<S> {
     protected AbstractService<I, T> targetService;
 
     @Getter
-    private Class<T> targetEntityClass;
+    protected Class<T> targetEntityClass;
 
     /**
      * The function to generate the target table data

@@ -13,6 +13,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RowChanged {
+    private Long rowId;
     private Map<String, String> preUpdate;
     private Map<String, String> snapshot;
 }
