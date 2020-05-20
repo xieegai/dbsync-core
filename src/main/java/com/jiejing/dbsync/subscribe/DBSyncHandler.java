@@ -1,10 +1,10 @@
-package com.github.bailaohe.dbsync.subscribe;
+package com.jiejing.dbsync.subscribe;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.PropertyNamingStrategy;
 import com.alibaba.fastjson.serializer.SerializeConfig;
-import com.github.bailaohe.dbsync.event.payload.RowBatchChanged;
-import com.github.bailaohe.dbsync.event.payload.RowChanged;
+import com.jiejing.dbsync.event.payload.RowBatchChanged;
+import com.jiejing.dbsync.event.payload.RowChanged;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;

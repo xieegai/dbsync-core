@@ -1,12 +1,11 @@
-package com.github.bailaohe.dbsync.subscribe;
+package com.jiejing.dbsync.subscribe;
 
-import com.github.bailaohe.dbsync.event.payload.RowBatchChanged;
+import com.jiejing.dbsync.event.payload.RowBatchChanged;
 import com.google.common.collect.ImmutableList;
 import lombok.AllArgsConstructor;
 import org.springframework.util.CollectionUtils;
 
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by baihe on 2017/8/24.

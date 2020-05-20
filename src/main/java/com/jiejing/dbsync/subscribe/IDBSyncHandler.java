@@ -1,6 +1,6 @@
-package com.github.bailaohe.dbsync.subscribe;
+package com.jiejing.dbsync.subscribe;
 
-import com.github.bailaohe.dbsync.event.payload.RowBatchChanged;
+import com.jiejing.dbsync.event.payload.RowBatchChanged;
 
 import java.util.List;
 import java.util.Set;

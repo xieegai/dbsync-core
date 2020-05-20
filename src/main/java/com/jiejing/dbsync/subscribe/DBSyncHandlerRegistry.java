@@ -1,4 +1,4 @@
-package com.github.bailaohe.dbsync.subscribe;
+package com.jiejing.dbsync.subscribe;
 
 import com.google.common.collect.ArrayListMultimap;
 import org.springframework.context.support.ApplicationObjectSupport;
