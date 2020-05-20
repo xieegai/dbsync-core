@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.github.bailaohe</groupId>
     <artifactId>dbsync-core</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>dbsync-core</name>
     <description>dbsync-core</description>
 
@@ -35,13 +35,8 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>18.0</version>
+            <version>22.0</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.github.bailaohe</groupId>
-            <artifactId>repository-servicelet</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
