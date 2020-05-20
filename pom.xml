@@ -8,9 +8,9 @@
         <version>2.0.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.github.bailaohe</groupId>
+    <groupId>com.jiejing.dbsync</groupId>
     <artifactId>dbsync-core</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>dbsync-core</name>
     <description>dbsync-core</description>
 
