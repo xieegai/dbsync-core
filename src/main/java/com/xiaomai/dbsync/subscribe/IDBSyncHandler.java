@@ -1,6 +1,6 @@
-package com.jiejing.dbsync.subscribe;
+package com.xiaomai.dbsync.subscribe;
 
-import com.jiejing.dbsync.event.payload.RowBatchChanged;
+import com.xiaomai.dbsync.event.payload.RowBatchChanged;
 
 import java.util.List;
 import java.util.Set;

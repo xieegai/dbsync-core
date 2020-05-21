@@ -1,10 +1,10 @@
-package com.jiejing.dbsync.subscribe;
+package com.xiaomai.dbsync.subscribe;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.PropertyNamingStrategy;
 import com.alibaba.fastjson.serializer.SerializeConfig;
-import com.jiejing.dbsync.event.payload.RowBatchChanged;
-import com.jiejing.dbsync.event.payload.RowChanged;
+import com.xiaomai.dbsync.event.payload.RowBatchChanged;
+import com.xiaomai.dbsync.event.payload.RowChanged;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;

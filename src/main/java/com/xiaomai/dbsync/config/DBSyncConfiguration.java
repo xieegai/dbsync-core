@@ -1,7 +1,7 @@
-package com.jiejing.dbsync.config;
+package com.xiaomai.dbsync.config;
 
-import com.jiejing.dbsync.subscribe.DBSyncHandlerRegistry;
-import com.jiejing.dbsync.subscribe.DBSyncProcessor;
+import com.xiaomai.dbsync.subscribe.DBSyncHandlerRegistry;
+import com.xiaomai.dbsync.subscribe.DBSyncProcessor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

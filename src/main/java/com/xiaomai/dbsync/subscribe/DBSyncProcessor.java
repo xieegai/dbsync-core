@@ -1,6 +1,6 @@
-package com.jiejing.dbsync.subscribe;
+package com.xiaomai.dbsync.subscribe;
 
-import com.jiejing.dbsync.event.payload.RowBatchChanged;
+import com.xiaomai.dbsync.event.payload.RowBatchChanged;
 import com.google.common.collect.ImmutableList;
 import lombok.AllArgsConstructor;
 import org.springframework.util.CollectionUtils;

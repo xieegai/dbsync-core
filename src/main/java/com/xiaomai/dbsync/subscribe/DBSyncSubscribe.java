@@ -1,4 +1,4 @@
-package com.jiejing.dbsync.subscribe;
+package com.xiaomai.dbsync.subscribe;
 
 import com.google.common.collect.Sets;
 import lombok.*;

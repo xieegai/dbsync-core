@@ -1,4 +1,4 @@
-package com.jiejing.dbsync.event.payload;
+package com.xiaomai.dbsync.event.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
