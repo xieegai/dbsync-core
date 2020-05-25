@@ -137,7 +137,7 @@ public abstract class DBSyncHandler<T> implements IDBSyncHandler {
             return;
         }
         // drop data if not in subscribed columns (only for update)
-        if (eventType == "UPDATE"
+        if (eventType.equalsIgnoreCase("UPDATE")
                 && !CollectionUtils.isEmpty(subscribeHit.getColumns())
                 && Collections.disjoint(subscribeHit.getColumns(), payload.getColumnsChanged())) {
             return;
