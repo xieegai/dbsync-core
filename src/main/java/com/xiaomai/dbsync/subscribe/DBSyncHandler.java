@@ -103,19 +103,19 @@ public abstract class DBSyncHandler<T> implements IDBSyncHandler {
                 .collect(Collectors.toSet());
     }
 
-    protected static List parseNewRows(RowBatchChanged payload, Class<?> entityClass) {
+    protected List parseNewRows(RowBatchChanged payload) {
         SerializeConfig serializeConfig = new SerializeConfig();
         serializeConfig.propertyNamingStrategy = PropertyNamingStrategy.CamelCase;
         return payload.getRows().stream().map(RowChanged::getSnapshot)
-                .map(x -> JSON.parseObject(JSON.toJSONString(x, serializeConfig), entityClass))
+                .map(x -> JSON.parseObject(JSON.toJSONString(x, serializeConfig), subscribeEntityClass))
                 .collect(Collectors.toList());
     }
 
-    protected static List parseOldRows(RowBatchChanged payload, Class<?> entityClass) {
+    protected List parseOldRows(RowBatchChanged payload) {
         SerializeConfig serializeConfig = new SerializeConfig();
         serializeConfig.propertyNamingStrategy = PropertyNamingStrategy.CamelCase;
         return payload.getRows().stream().map(RowChanged::getPreUpdate)
-                .map(x -> JSON.parseObject(JSON.toJSONString(x, serializeConfig), entityClass))
+                .map(x -> JSON.parseObject(JSON.toJSONString(x, serializeConfig), subscribeEntityClass))
                 .collect(Collectors.toList());
     }
 
@@ -143,8 +143,8 @@ public abstract class DBSyncHandler<T> implements IDBSyncHandler {
             return;
         }
 
-        List oldRows = parseOldRows(payload, subscribeHit.getEntityClass());
-        List newRows = parseNewRows(payload, subscribeHit.getEntityClass());
+        List oldRows = parseOldRows(payload);
+        List newRows = parseNewRows(payload);
 
         if (eventType.equalsIgnoreCase("INSERT")) {
             if (payload.getDb().equals(subscribe().getDb())
