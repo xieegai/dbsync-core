@@ -103,7 +103,7 @@ public abstract class DBSyncHandler<T> implements IDBSyncHandler {
                 .collect(Collectors.toSet());
     }
 
-    private static List parseNewRows(RowBatchChanged payload, Class<?> entityClass) {
+    protected static List parseNewRows(RowBatchChanged payload, Class<?> entityClass) {
         SerializeConfig serializeConfig = new SerializeConfig();
         serializeConfig.propertyNamingStrategy = PropertyNamingStrategy.CamelCase;
         return payload.getRows().stream().map(RowChanged::getSnapshot)
@@ -111,7 +111,7 @@ public abstract class DBSyncHandler<T> implements IDBSyncHandler {
                 .collect(Collectors.toList());
     }
 
-    private static List parseOldRows(RowBatchChanged payload, Class<?> entityClass) {
+    protected static List parseOldRows(RowBatchChanged payload, Class<?> entityClass) {
         SerializeConfig serializeConfig = new SerializeConfig();
         serializeConfig.propertyNamingStrategy = PropertyNamingStrategy.CamelCase;
         return payload.getRows().stream().map(RowChanged::getPreUpdate)
